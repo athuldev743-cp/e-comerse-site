@@ -22,7 +22,7 @@
   </div>
 </div>
 
-<!-- ✅ Wrap both left and right sections in one container -->
+
 <div class="main-content">
   <!-- Left Section -->
   <div class="left_section">
@@ -39,26 +39,42 @@
     </div>
   </div>
 
-  <!-- Right Section -->
- <div class="right-section">
-  <div class="r1" data-label="Books">
-    <img src="assets/books.jpeg" alt="Books">
-  </div>
-  <div class="r2" data-label="Kitchen Utensils">
-    <img src="assets/kitchen.jpeg" alt="Kitchen Utensils">
-  </div>
-  <div class="r3" data-label="Electronic Gadgets">
-    <img src="assets/gadgets.jpeg" alt="Electronic Gadgets">
-  </div>
-  <div class="r4" data-label="Tech Gadgets">
-    <img src="assets/mobile.jpeg" alt="smartphones">
-  </div>
-  <div class="r5" data-label="Pet Food">
-    <img src="assets/petfood.jpeg" alt="Pet Food">
-  </div>
-  <div class="r6" data-label="Footwear">
-    <img src="assets/footwears.jpeg" alt="Footwear">
-  </div>
+  
+<!-- Right Section -->
+<div class="right-section">
+  <div class="r1 category" data-category="books" onclick="goToProducts('books')">
+  <img src="assets/books.jpeg" alt="Books">
+</div>
+
+<!-- r2: Kitchen -->
+<div class="r2 category" data-category="kitchen" onclick="goToProducts('kitchen')">
+  <img src="assets/kitchen.jpeg" alt="Kitchen">
+</div>
+
+<!-- r3: Electronics -->
+<div class="r3 category" data-category="electronics" onclick="goToProducts('electronics')">
+  <img src="assets/gadgets.jpeg" alt="Electronics">
+</div>
+
+<!-- r4: Tech -->
+<div class="r4 category" data-category="tech" onclick="goToProducts('tech')">
+  <img src="assets/mobile.jpeg" alt="Tech">
+</div>
+
+<!-- r5: Pets -->
+<div class="r5 category" data-category="pets" onclick="goToProducts('pets')">
+  <img src="assets/petfood.jpeg" alt="Pets">
+</div>
+
+<!-- r6: Footwear -->
+<div class="r6 category" data-category="footwear" onclick="goToProducts('footwear')">
+  <img src="assets/footwears.jpeg" alt="Footwear">
+</div>
+</div>
+
+
+
+
 </div>
 
 
@@ -67,6 +83,11 @@
 
 
 
-    
+    <script src="script.js"></script>
+    <script>
+    function goToProducts(category) {
+      window.location.href = `products.html?category=${category}`;
+    }
+  </script>
 </body>
 </html>
