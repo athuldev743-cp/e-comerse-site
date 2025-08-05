@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Enter key press in input triggers the search
   searchInput.addEventListener("keypress", function (event) {
     if (event.key === "Enter") {
-      searchBtn.click(); // Trigger the click event
+      searchBtn.click();
     }
   });
 });
